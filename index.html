@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Peminjaman Fasilitas Sekolah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Peminjaman Fasilitas Sekolah</h1>
+
+  <form id="peminjamanForm">
+    <label>Nama: <input type="text" id="nama" required></label><br>
+    <label>Absen: <input type="text" id="absen" required></label><br>
+    <label>Kelas: <input type="text" id="kelas" required></label><br>
+    <label>Fasilitas: 
+      <select id="fasilitas" required>
+        <option value="">-- Pilih --</option>
+        <option value="Proyektor">Proyektor</option>
+        <option value="Lab Komputer">Lab Komputer</option>
+        <option value="Ruang Kelas">Ruang Kelas</option>
+      </select>
+    </label><br>
+    <label>Tanggal: <input type="date" id="tanggal" required></label><br>
+    <label>Waktu Mulai: <input type="time" id="waktuMulai" required></label><br>
+    <label>Waktu Selesai: <input type="time" id="waktuSelesai" required></label><br>
+
+    <button type="submit">Tambah Peminjaman</button>
+  </form>
+
+  <h2>Jadwal Peminjaman</h2>
+  <table id="jadwalTable">
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Absen</th>
+        <th>Kelas</th>
+        <th>Fasilitas</th>
+        <th>Tanggal</th>
+        <th>Waktu</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data akan ditambahkan dengan JavaScript -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
